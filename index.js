@@ -1,12 +1,18 @@
-var color, i;
+var color, r, g, b;
 
-function myFunction(){
+function changeColor(){
 
-    color = ['red','purple','green','blue','pink','orange','brown','aqua'];
+    r = Math.floor(Math.random()*256);
+    g = Math.floor(Math.random()*256);
+    b = Math.floor(Math.random()*256);
 
-    for (var i = 0; i < color.length; i++ ){
-        document.body.style.background = color;
-    }
+    console.log(r,g,b);
+    color = 'rgb' + "("+ r +","+ g +","+ b +")";
+    console.log(color);
+    
+    document.body.style.background = color;
+    
    
 }
+
 
